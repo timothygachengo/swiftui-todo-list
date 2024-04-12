@@ -7,9 +7,13 @@
 
 import SwiftUI
 import SwiftData
+import FirebaseCore
 
 @main
 struct todolistApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
