@@ -38,6 +38,8 @@
 		221C0A312BC9418400624275 /* RegsiterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A302BC9418400624275 /* RegsiterViewModel.swift */; };
 		221C0A332BC9419600624275 /* TodoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A322BC9419600624275 /* TodoListItemViewModel.swift */; };
 		221C0A352BC941A500624275 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A342BC941A500624275 /* TodoListViewModel.swift */; };
+		221C0A372BC9450100624275 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 221C0A362BC9450100624275 /* GoogleService-Info.plist */; };
+		221C0A392BC9471700624275 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A382BC9471700624275 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +71,6 @@
 		221C09EA2BC9378000624275 /* todolistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todolistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221C09EE2BC9378000624275 /* todolistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistUITests.swift; sourceTree = "<group>"; };
 		221C09F02BC9378000624275 /* todolistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		221C0A152BC93F5B00624275 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		221C0A162BC9403100624275 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		221C0A1A2BC9404F00624275 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		221C0A1C2BC9405900624275 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -85,6 +86,8 @@
 		221C0A302BC9418400624275 /* RegsiterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegsiterViewModel.swift; sourceTree = "<group>"; };
 		221C0A322BC9419600624275 /* TodoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemViewModel.swift; sourceTree = "<group>"; };
 		221C0A342BC941A500624275 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		221C0A362BC9450100624275 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		221C0A382BC9471700624275 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 		221C09D02BC9377E00624275 /* todolist */ = {
 			isa = PBXGroup;
 			children = (
+				221C0A362BC9450100624275 /* GoogleService-Info.plist */,
 				221C0A142BC93F3800624275 /* Other */,
 				221C0A132BC93F2500624275 /* Models */,
 				221C0A122BC93F1700624275 /* ViewModels */,
@@ -187,6 +191,7 @@
 				221C0A1E2BC9406200624275 /* RegisterView.swift */,
 				221C0A202BC940DC00624275 /* TodoListItemView.swift */,
 				221C0A222BC9410B00624275 /* TodoListView.swift */,
+				221C0A382BC9471700624275 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,8 +201,8 @@
 			children = (
 				221C0A282BC9414D00624275 /* ContentViewModel.swift */,
 				221C0A2A2BC9415800624275 /* ProfileViewModel.swift */,
-				221C0A2C2BC9416600624275 /* NewItemViewModel.swift */,
 				221C0A2E2BC9417700624275 /* LoginViewModel.swift */,
+				221C0A2C2BC9416600624275 /* NewItemViewModel.swift */,
 				221C0A302BC9418400624275 /* RegsiterViewModel.swift */,
 				221C0A322BC9419600624275 /* TodoListItemViewModel.swift */,
 				221C0A342BC941A500624275 /* TodoListViewModel.swift */,
@@ -219,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				221C09D72BC9378000624275 /* Assets.xcassets */,
-				221C0A152BC93F5B00624275 /* GoogleService-Info.plist */,
 				221C09D12BC9377E00624275 /* todolistApp.swift */,
 			);
 			path = Other;
@@ -344,6 +348,7 @@
 			files = (
 				221C09DB2BC9378000624275 /* Preview Assets.xcassets in Resources */,
 				221C09D82BC9378000624275 /* Assets.xcassets in Resources */,
+				221C0A372BC9450100624275 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +379,7 @@
 				221C0A312BC9418400624275 /* RegsiterViewModel.swift in Sources */,
 				221C0A352BC941A500624275 /* TodoListViewModel.swift in Sources */,
 				221C0A272BC9412C00624275 /* TodoListItem.swift in Sources */,
+				221C0A392BC9471700624275 /* HeaderView.swift in Sources */,
 				221C09D42BC9377E00624275 /* ContentView.swift in Sources */,
 				221C0A1F2BC9406200624275 /* RegisterView.swift in Sources */,
 				221C0A232BC9410B00624275 /* TodoListView.swift in Sources */,
