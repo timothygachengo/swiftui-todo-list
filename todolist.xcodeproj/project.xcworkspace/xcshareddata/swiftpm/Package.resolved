@@ -116,6 +116,15 @@
         "revision" : "9f0c76544701845ad98716f3f6a774a892152bcb",
         "version" : "1.26.0"
       }
+    },
+    {
+      "identity" : "validator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/space-code/validator.git",
+      "state" : {
+        "revision" : "0a116ae2c661964b87b5682551f19edbb8b274a8",
+        "version" : "1.0.1"
+      }
     }
   ],
   "version" : 2

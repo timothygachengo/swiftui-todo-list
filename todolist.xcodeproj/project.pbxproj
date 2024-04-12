@@ -40,6 +40,10 @@
 		221C0A352BC941A500624275 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A342BC941A500624275 /* TodoListViewModel.swift */; };
 		221C0A372BC9450100624275 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 221C0A362BC9450100624275 /* GoogleService-Info.plist */; };
 		221C0A392BC9471700624275 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A382BC9471700624275 /* HeaderView.swift */; };
+		221C0A3C2BC94EE700624275 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A3B2BC94EE700624275 /* TLButton.swift */; };
+		221C0A3F2BC9563F00624275 /* ValidatorCore in Frameworks */ = {isa = PBXBuildFile; productRef = 221C0A3E2BC9563F00624275 /* ValidatorCore */; };
+		221C0A412BC9563F00624275 /* ValidatorUI in Frameworks */ = {isa = PBXBuildFile; productRef = 221C0A402BC9563F00624275 /* ValidatorUI */; };
+		221C0A432BC95C1700624275 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221C0A422BC95C1700624275 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,8 @@
 		221C0A342BC941A500624275 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		221C0A362BC9450100624275 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		221C0A382BC9471700624275 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		221C0A3B2BC94EE700624275 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		221C0A422BC95C1700624275 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 				221C0A052BC93C8B00624275 /* FirebaseDatabaseSwift in Frameworks */,
 				221C0A032BC93C8B00624275 /* FirebaseDatabase in Frameworks */,
 				221C09FF2BC93C8B00624275 /* FirebaseAuth in Frameworks */,
+				221C0A3F2BC9563F00624275 /* ValidatorCore in Frameworks */,
+				221C0A412BC9563F00624275 /* ValidatorUI in Frameworks */,
 				221C0A0B2BC93C8B00624275 /* FirebaseFirestoreSwift in Frameworks */,
 				221C0A092BC93C8B00624275 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				221C0A072BC93C8B00624275 /* FirebaseFirestore in Frameworks */,
@@ -126,6 +134,7 @@
 		221C09C52BC9377E00624275 = {
 			isa = PBXGroup;
 			children = (
+				221C0A3B2BC94EE700624275 /* TLButton.swift */,
 				221C09D02BC9377E00624275 /* todolist */,
 				221C09E32BC9378000624275 /* todolistTests */,
 				221C09ED2BC9378000624275 /* todolistUITests */,
@@ -225,6 +234,7 @@
 			children = (
 				221C09D72BC9378000624275 /* Assets.xcassets */,
 				221C09D12BC9377E00624275 /* todolistApp.swift */,
+				221C0A422BC95C1700624275 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 				221C0A082BC93C8B00624275 /* FirebaseFirestoreCombine-Community */,
 				221C0A0A2BC93C8B00624275 /* FirebaseFirestoreSwift */,
 				221C0A0C2BC93C8B00624275 /* FirebaseMessaging */,
+				221C0A3E2BC9563F00624275 /* ValidatorCore */,
+				221C0A402BC9563F00624275 /* ValidatorUI */,
 			);
 			productName = todolist;
 			productReference = 221C09CE2BC9377E00624275 /* todolist.app */;
@@ -329,6 +341,7 @@
 			mainGroup = 221C09C52BC9377E00624275;
 			packageReferences = (
 				221C09FD2BC93C8B00624275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				221C0A3D2BC9563F00624275 /* XCRemoteSwiftPackageReference "validator" */,
 			);
 			productRefGroup = 221C09CF2BC9377E00624275 /* Products */;
 			projectDirPath = "";
@@ -382,9 +395,11 @@
 				221C0A392BC9471700624275 /* HeaderView.swift in Sources */,
 				221C09D42BC9377E00624275 /* ContentView.swift in Sources */,
 				221C0A1F2BC9406200624275 /* RegisterView.swift in Sources */,
+				221C0A3C2BC94EE700624275 /* TLButton.swift in Sources */,
 				221C0A232BC9410B00624275 /* TodoListView.swift in Sources */,
 				221C0A212BC940DC00624275 /* TodoListItemView.swift in Sources */,
 				221C0A2F2BC9417700624275 /* LoginViewModel.swift in Sources */,
+				221C0A432BC95C1700624275 /* Extensions.swift in Sources */,
 				221C0A2D2BC9416600624275 /* NewItemViewModel.swift in Sources */,
 				221C0A332BC9419600624275 /* TodoListItemViewModel.swift in Sources */,
 				221C0A292BC9414D00624275 /* ContentViewModel.swift in Sources */,
@@ -727,6 +742,14 @@
 				minimumVersion = 10.24.0;
 			};
 		};
+		221C0A3D2BC9563F00624275 /* XCRemoteSwiftPackageReference "validator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/space-code/validator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -769,6 +792,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 221C09FD2BC93C8B00624275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		221C0A3E2BC9563F00624275 /* ValidatorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221C0A3D2BC9563F00624275 /* XCRemoteSwiftPackageReference "validator" */;
+			productName = ValidatorCore;
+		};
+		221C0A402BC9563F00624275 /* ValidatorUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 221C0A3D2BC9563F00624275 /* XCRemoteSwiftPackageReference "validator" */;
+			productName = ValidatorUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

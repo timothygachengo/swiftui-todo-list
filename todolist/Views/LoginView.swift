@@ -9,33 +9,36 @@ import SwiftUI
 
 
 struct LoginView: View {
-    @State var email = ""
-    @State var password = ""
+    @StateObject var loginViewModel = LoginViewModel();
     
     var body: some View {
         NavigationView {
     
             VStack{
-                HeaderView();
+                HeaderView(title: "Todo List", subtitle: "Get things done", angle: -10, background: Color.pink);
                 // Login form
                 
+               
+                
                 Form {
-                    TextField("Email", text: $email)
+                    if !loginViewModel.errorMessage.isEmpty {
+                        Text(loginViewModel.errorMessage)
+                            .foregroundColor(.red)
+                    }
+                    
+                    TextField("Email", text: $loginViewModel.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                    SecureField("Password", text: $password)
+                        .autocorrectionDisabled()
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                        .textContentType(.emailAddress)
+                    
+                    SecureField("Password", text: $loginViewModel.password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .textContentType(.password)
                     
-                    Button {
-                        
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color.blue)
-                            Text("Login")
-                                .bold()
-                                .foregroundColor(.white)
-                        }
+                    TLButton(title: "Login", background: .blue) {
+                        // action
+                        loginViewModel.login()
                     }
                         
                 }
