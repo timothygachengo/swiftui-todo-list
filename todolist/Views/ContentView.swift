@@ -14,7 +14,8 @@ struct ContentView: View {
     var body: some View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
             // signed in
-            TodoListView()
+            accountView()
+           
         } else {
             NavigationView{
                 LoginView()
@@ -22,6 +23,20 @@ struct ContentView: View {
         }
         
         
+    }
+    
+    @ViewBuilder
+    func accountView() -> some View {
+        TabView {
+            TodoListView(userId: viewModel.currentUserId)
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("Home", systemImage: "person.circle")
+                }
+        }
     }
 }
 
