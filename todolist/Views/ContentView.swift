@@ -34,7 +34,7 @@ struct ContentView: View {
                 }
             ProfileView()
                 .tabItem {
-                    Label("Home", systemImage: "person.circle")
+                    Label("Profile", systemImage: "person.circle")
                 }
         }
     }

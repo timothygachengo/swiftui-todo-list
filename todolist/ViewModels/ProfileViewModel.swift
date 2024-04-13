@@ -6,8 +6,29 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 
 class ProfileViewModel: ObservableObject {
     init () {}
+    
+    func signOut () {
+        guard let uid = Auth.auth().currentUser?.uid else {
+            do {
+                try Auth.auth().signOut()
+            } catch {
+                return
+            }
+            
+            return
+        }
+        
+        do {
+            try Auth.auth().signOut();
+        } catch {
+            return;
+        }
+        
+        
+    }
 }
